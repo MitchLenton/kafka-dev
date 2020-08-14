@@ -15,5 +15,5 @@ docker build --pull --rm -f "Dockerfile" -t kafkadev:latest "."
 ### Run
 
 ```bash
-docker run --rm -it  -p 2181:2181/tcp -p 9092:9092/tcp kafkadev:latest
+docker run --rm -p 2181:2181/tcp -p 9092:9092/tcp kafkadev:latest
 ```
