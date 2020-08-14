@@ -14,13 +14,13 @@ RUN curl http://apache.mirror.iweb.ca/kafka/${KAFKA_VERSION}/kafka_${SCALA_VERSI
 ENV KAFKA_HOME="/usr/local/kafka_${SCALA_VERSION}-${KAFKA_VERSION}"
 ENV PATH=$PATH:${KAFKA_HOME}/bin
 
-VOLUME [ "/kafka_data" ]
+VOLUME [ "/var/log/kafka" ]
 
-COPY launch.sh .
+COPY scripts/launch.sh .
 RUN chmod +x launch.sh
 
-COPY server.properties $KAFKA_HOME/config/server.properties
-COPY zookeeper.properties $KAFKA_HOME/config/zookeeper.properties
+COPY config/server.properties $KAFKA_HOME/config/server.properties
+COPY config/zookeeper.properties $KAFKA_HOME/config/zookeeper.properties
 
 EXPOSE 9092 2181
 
