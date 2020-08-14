@@ -2,7 +2,7 @@
 
 ## Description
 
-Creates a light weight kafka docker container for development uses. It runs using alpine linux in order to reduce the container size.
+Creates a lightweight kafka docker container for use during development. It uses alpine linux in order to reduce the container size.
 
 ## Instructions
 
