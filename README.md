@@ -1,5 +1,7 @@
 # kafka-dev
 
+![Docker](https://github.com/MitchLenton/kafka-dev/workflows/Docker/badge.svg)
+
 ## Description
 
 Creates a lightweight kafka docker container for use during development. It uses alpine linux in order to reduce the container size.
